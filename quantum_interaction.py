@@ -226,7 +226,7 @@ range_potential = 100
 
 # Quantum parameter
 mass = 9.1093837015 * 1.0E-31   # Unit: kg
-tm, te = 1., 7
+tm, te = 1., 6.5
 t = tm * np.power(10., te)  # Unit: s
 h = 6.62607015 * 1.0E-34    # Unit: m2 kg / s
 
