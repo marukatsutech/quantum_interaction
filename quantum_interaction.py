@@ -280,7 +280,7 @@ rot_potential_by_b = np.sin(theta_potential_by_b) + np.cos(theta_potential_by_b)
 # Generate figure and axes
 title_tk = "Quantum Mechanics, Path integral (interaction)"
 title_ax0 = "Quantum"
-title_ax1 = "Potential:"
+title_ax1 = "Potential by quantum"
 
 x_min0 = - range_x
 x_max0 = range_x
