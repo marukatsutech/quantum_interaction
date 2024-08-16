@@ -328,7 +328,7 @@ plt_qtm0b, = ax0.plot(x, yb, zb, color='red', linewidth=0.5, label='Quantum B')
 plt_potential_by_a, = ax1.plot(x, theta_potential_by_a, color='blue',
                                label='Sum of delta x **2 * abs(quantum A(x))')
 plt_potential_by_b, = ax1.plot(x, theta_potential_by_b, color='red',
-                               label='Sum of delta x **2 * abs(quantum B(x)))')
+                               label='Sum of delta x **2 * abs(quantum B(x))')
 update_potential()
 
 # Legend
