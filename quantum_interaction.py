@@ -125,36 +125,42 @@ def set_k0a(value):
     global k0a
     k0a = float(value)
     update_qtm0a()
+    update_potential()
 
 
 def set_x0a(value):
     global mu0a
     mu0a = float(value)
     update_qtm0a()
+    update_potential()
 
 
 def set_sigma0a(value):
     global sigma0a
     sigma0a = float(value)
     update_qtm0a()
+    update_potential()
 
 
 def set_k0b(value):
     global k0b
     k0b = float(value)
     update_qtm0b()
+    update_potential()
 
 
 def set_x0b(value):
     global mu0b
     mu0b = float(value)
     update_qtm0b()
+    update_potential()
 
 
 def set_sigma0b(value):
     global sigma0b
     sigma0b = float(value)
     update_qtm0b()
+    update_potential()
 
 
 def set_tm(value):
@@ -383,7 +389,7 @@ lbl_s0a.pack(side='left')
 var_s0a = tk.StringVar(root)
 var_s0a.set(str(sigma0a))
 spn_s0a = tk.Spinbox(
-    frm_qtm_a, textvariable=var_s0a, format="%.1f", from_=-600, to=600, increment=10,
+    frm_qtm_a, textvariable=var_s0a, format="%.1f", from_=-600, to=600, increment=1,
     command=lambda: set_sigma0a(var_s0a.get()), width=6
     )
 spn_s0a.pack(side='left')
@@ -417,7 +423,7 @@ lbl_s0b.pack(side='left')
 var_s0b = tk.StringVar(root)
 var_s0b.set(str(sigma0b))
 spn_s0b = tk.Spinbox(
-    frm_qtm_b, textvariable=var_s0b, format="%.1f", from_=-600, to=600, increment=10,
+    frm_qtm_b, textvariable=var_s0b, format="%.1f", from_=-600, to=600, increment=1,
     command=lambda: set_sigma0b(var_s0b.get()), width=6
     )
 spn_s0b.pack(side='left')
