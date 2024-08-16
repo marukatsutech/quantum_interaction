@@ -184,7 +184,6 @@ def step():
 
 def reset():
     global is_play, cnt
-    global cnt_step
     global k0a, sigma0a, mu0a
     global k0b, sigma0b, mu0b
     is_play = False
@@ -221,7 +220,6 @@ def update(f):
 # Animation control
 cnt = 0
 is_play = False
-cnt_step = 1
 
 # Data structure
 range_x = 1000
